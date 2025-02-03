@@ -85,7 +85,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1422,1159" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1836,1332" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Double" Name="deposit_amount" />
       <Variable x:TypeArguments="x:Int32" Default="1" Name="deposit_period" />
@@ -121,6 +121,7 @@
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;final cumulated interest at the end of the&quot;+ deposit_period.ToString+&quot;year period is: &quot;+Math.Round(final_earning,2).ToString+&quot;$&quot;+vbLf + vbLf+ &quot;Deposit balance at the end of the &quot;+ deposit_period.ToString+&quot;year period is &quot;+Math.Round(final_earning + deposit_amount,2).ToString=&quot;$.&quot;]" />
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;final cumulated interest at the end of the&quot;+ deposit_period.ToString+&quot;year period is: &quot;+Math.Round(final_earning,2).ToString+&quot;$&quot;+vbLf + vbLf+ &quot;Deposit balance at the end of the &quot;+ deposit_period.ToString+&quot;year period is &quot;+Math.Round(final_earning + deposit_amount,2).ToString=&quot;$.&quot;]" />
   </Sequence>
 </Activity>
